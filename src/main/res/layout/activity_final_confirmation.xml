@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalConfirmation">
+
+    <TextView
+        android:id="@+id/cartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Your cart: "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/totalPrice"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cartText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox1"
+        android:layout_toRightOf="@+id/cartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay to me"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox2"
+        android:layout_toRightOf="@+id/cartText"
+        android:layout_below="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate to charity!"
+        android:layout_marginLeft="100dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/checkbox3"
+        android:layout_toRightOf="@+id/cartText"
+        android:layout_below="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gift to client"
+        android:layout_marginLeft="100dp"/>
+
+
+</RelativeLayout>
